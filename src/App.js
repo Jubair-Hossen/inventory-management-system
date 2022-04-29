@@ -6,6 +6,7 @@ import LogIn from './Pages/LogIn/LogIn';
 import SignUp from './Pages/SignUp/SignUp';
 import Header from './Components/Header/Header';
 import AddItems from './Pages/AddItems/AddItems';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' element={<LogIn></LogIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

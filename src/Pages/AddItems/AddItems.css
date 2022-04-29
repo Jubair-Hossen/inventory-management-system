@@ -21,19 +21,51 @@
     width: 100%;
 }
 
+.add-items .input-form {
+    box-sizing: border-box;
+}
+
 .add-items .input-form label {
     display: block;
     margin-bottom: 5px;
 }
 
-.add-items .input-form input {
+.add-items .input-form input:not([type=submit]),
+.add-items .input-form textarea {
     width: 80%;
-    padding: 8px;
+    font-size: 16px;
+    padding: 10px;
     margin-bottom: 10px;
+    background-color: #e4e4e4;
+    border: none;
+    border-radius: 6px;
 }
 
-textarea {
+
+.add-items .input-form input:focus,
+.add-items .input-form textarea:focus {
+    outline: none;
+}
+
+/* .add-items .input-form textarea {
     width: 80%;
     padding: 8px;
     margin-bottom: 10px;
+} */
+
+.add-items .input-form .price-quantity {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+}
+
+.add-items .input-form input[type=submit] {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
