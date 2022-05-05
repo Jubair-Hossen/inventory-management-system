@@ -1,0 +1,15 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto 30px;
+    padding: 20px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
