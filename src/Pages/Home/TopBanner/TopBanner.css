@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container {
+    background-color: azure;
+}
+
+.top-banner {
+    max-width: 1440px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-banner img {
+    width: 70%;
+}
+
+.top-banner .banner-text h1 {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.top-banner .banner-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.top-banner .banner-text p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.top-banner .banner-text button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
