@@ -14,7 +14,7 @@ const Items = () => {
             <h1>Managed products By Users</h1>
             <div className="products-container">
                 {
-                    products.slice(0, 6).map(product => <Product product={product}></Product>)
+                    products.slice(0, 6).map(product => <Product key={product._id} product={product}></Product>)
                 }
             </div>
         </section>
