@@ -32,3 +32,48 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.add-quantity {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.add-quantity input[type=number] {
+    width: 40%;
+    padding: 8px 10px;
+    border: none;
+    background-color: rgb(171, 171, 171);
+    border-radius: 4px 0 0 4px;
+    font-size: 18px;
+}
+
+.add-quantity input[type=number]:focus {
+    outline: none;
+}
+
+.add-quantity input[type=submit] {
+    width: 15%;
+    padding: 8px 10px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+
+    .product-details {
+        grid-template-columns: 1fr;
+    }
+
+    .add-quantity input[type=submit],
+    .add-quantity input[type=number] {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
