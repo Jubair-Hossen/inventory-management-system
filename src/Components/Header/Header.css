@@ -5,11 +5,15 @@ header {
 .nav-bar {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px 20px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-bar .nav-brand img {
+    width: 50px;
 }
 
 .nav-bar .nav-items a {
@@ -21,6 +25,7 @@ header {
 }
 
 .nav-bar .menu-icon {
+    font-size: 24px;
     color: white;
     margin-left: 20px;
     cursor: pointer;
@@ -34,7 +39,7 @@ header {
 
     .nav-bar .nav-items {
         position: absolute;
-        top: 50px;
+        top: 55px;
         left: 0;
         background-color: blueviolet;
         padding: 30px 10px;

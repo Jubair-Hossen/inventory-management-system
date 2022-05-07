@@ -1,9 +1,12 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import auth from '../../firebase.init';
 import './AddItems.css'
 
 const AddItems = () => {
+    const [user] = useAuthState(auth);
     const handleAddToInventory = (e) => {
         e.preventDefault();
         // get the added product
@@ -13,9 +16,9 @@ const AddItems = () => {
         const url = e.target.url.value;
         const price = e.target.price.value;
         const quantities = e.target.quantities.value;
+        const email = user?.email;
 
-        const addedProduct = { name, description, supplier, url, price, quantities };
-        console.log(addedProduct);
+        const addedProduct = { name, description, supplier, url, price, quantities, email };
 
         // send the product to the server
         fetch('http://localhost:5000/add-products', {
@@ -43,26 +46,26 @@ const AddItems = () => {
                 <div className="input-form">
                     <form onSubmit={handleAddToInventory}>
                         <label htmlFor="name">Product Name :</label>
-                        <input type="text" name="name" id="name" />
+                        <input type="text" name="name" id="name" required />
 
                         <label htmlFor="description">Short Description :</label>
-                        <textarea name="description" id="description" rows="4"></textarea>
+                        <textarea name="description" id="description" rows="4" required></textarea>
 
                         <label htmlFor="supplier">Supplier Name :</label>
-                        <input type="text" name="supplier" id="supplier" />
+                        <input type="text" name="supplier" id="supplier" required />
 
                         <label htmlFor="url">Product Image Url :</label>
-                        <input type="text" name="url" id="url" />
+                        <input type="text" name="url" id="url" required />
 
                         <div className="price-quantity">
                             <div>
                                 <label htmlFor="price">Price :</label>
-                                <input type="text" name="price" id="price" />
+                                <input type="number" name="price" id="price" required />
                             </div>
 
                             <div>
                                 <label htmlFor="quantities">Quantities :</label>
-                                <input type="text" name="quantities" id="quantities" />
+                                <input type="number" name="quantities" id="quantities" required />
                             </div>
                         </div>
 

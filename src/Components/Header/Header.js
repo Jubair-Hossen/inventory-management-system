@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import auth from '../../firebase.init';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
         <header>
             <nav className='nav-bar'>
                 <div className="nav-brand">
-                    <p>Inventory Manager</p>
+                    <Link to={'/'}><img src={logo} alt="" /></Link>
                 </div>
                 <div className={`nav-items ${isOpen ? 'show' : 'hide'}`}>
                     <Link to='/' onClick={toogle}>Home</Link>

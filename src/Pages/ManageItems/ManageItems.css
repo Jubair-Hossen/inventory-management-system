@@ -1,6 +1,7 @@
 .all-items-container {
     width: 100%;
-    overflow: auto;
+    min-height: 50vh;
+    overflow-x: auto;
     margin-bottom: 50px;
 }
 
@@ -51,6 +52,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .all-items-container {
+        min-height: 65vh;
+    }
+
     .inventory-table {
         width: 700px;
     }
