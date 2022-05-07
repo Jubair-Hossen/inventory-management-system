@@ -39,6 +39,7 @@
     background-color: #e4e4e4;
     border: none;
     border-radius: 6px;
+    box-sizing: border-box;
 }
 
 
@@ -68,4 +69,18 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+
+    .add-items,
+    .add-items .input-form .price-quantity {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .add-items .input-form input:not([type=submit]),
+    .add-items .input-form textarea {
+        width: 100%;
+    }
 }

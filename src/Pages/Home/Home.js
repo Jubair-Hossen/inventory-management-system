@@ -1,5 +1,6 @@
 import React from 'react';
 import Items from './Items/Items';
+import Newsletter from './Newsletter/Newsletter';
 import TopBanner from './TopBanner/TopBanner';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <TopBanner></TopBanner>
             <Items></Items>
+            <Newsletter></Newsletter>
         </>
     );
 };
