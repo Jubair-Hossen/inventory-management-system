@@ -5,16 +5,56 @@ header {
 .nav-bar {
     max-width: 1240px;
     margin: 0 auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar .nav-items a {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 20px 5px;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 20px;
+}
+
+.nav-bar .menu-icon {
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar .menu-icon {
+        display: inline-block;
+    }
+
+    .nav-bar .nav-items {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: blueviolet;
+        padding: 30px 10px;
+        transition: 0.3s;
+    }
+
+    .nav-bar .nav-items a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .show {
+        width: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hide {
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
 }

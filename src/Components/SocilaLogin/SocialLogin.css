@@ -1,0 +1,36 @@
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider .line {
+    width: 50%;
+    height: 1px;
+    background-color: #8d8d8d;
+}
+
+.divider p {
+    margin: 0 5px 5px;
+}
+
+.social-login .btn {
+    font-size: 16px;
+    width: 60%;
+    margin: 5px auto;
+    padding: 5px 10px;
+    border: 2px solid blue;
+    border-radius: 50px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.social-login .btn img {
+    width: 20px;
+}
+
+.social-login .error {
+    color: #ba0505;
+}

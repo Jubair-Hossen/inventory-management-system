@@ -65,7 +65,7 @@ const ManageProduct = () => {
             <div className="add-quantity">
                 <h1>Add Some Quantities to This Product</h1>
                 <form onSubmit={handleAddQuantities}>
-                    <input type="number" name="quantity" id="" placeholder='Quantities' />
+                    <input type="number" name="quantity" id="" placeholder='Quantities' required />
                     <input type="submit" value="Add Quantities" />
                 </form>
             </div>
