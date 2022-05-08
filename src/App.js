@@ -13,6 +13,7 @@ import PasswordReset from './Components/PasswordReset/PasswordReset';
 import Footer from './Components/Footer/Footer';
 import ProtectedRout from './Components/ProtectedRout/ProtectedRout';
 import MyItems from './Pages/MyItems/MyItems';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path='/login' element={<LogIn></LogIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/resetpassword' element={<PasswordReset></PasswordReset>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />

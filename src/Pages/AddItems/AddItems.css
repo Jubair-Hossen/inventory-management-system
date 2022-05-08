@@ -56,13 +56,6 @@
 
 .add-items .input-form input[type=submit] {
     margin-top: 10px;
-    padding: 8px 12px;
-    background-color: blueviolet;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 @media only screen and (max-width:768px) {

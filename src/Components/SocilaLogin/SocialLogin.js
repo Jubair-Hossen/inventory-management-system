@@ -19,7 +19,7 @@ const SocialLogin = () => {
                 <p>or</p>
                 <div className='line'></div>
             </div>
-            <div className='btn' onClick={() => signInWithGoogle()}>
+            <div className='social-btn' onClick={() => signInWithGoogle()}>
                 <img src={googleLogo} alt="" />
                 <p>Continue With Google</p>
             </div>

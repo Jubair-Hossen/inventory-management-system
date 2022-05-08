@@ -10,7 +10,7 @@ const TopBanner = () => {
                     <h1>Radon Manager</h1>
                     <h3>An Inventory Management Application</h3>
                     <p>Manage your inventory easily with "Radon Manager". <br /> It is totally free.</p>
-                    <button>Get Started</button>
+                    <button className='btn'>Get Started</button>
                 </div>
             </div>
         </section>

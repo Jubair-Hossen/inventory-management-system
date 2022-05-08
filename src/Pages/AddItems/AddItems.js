@@ -69,7 +69,7 @@ const AddItems = () => {
                             </div>
                         </div>
 
-                        <input type="submit" value="Add To Inventory" />
+                        <input className='btn' type="submit" value="Add To Inventory" />
                     </form>
                 </div>
             </div>

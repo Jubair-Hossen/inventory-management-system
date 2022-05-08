@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ManageItems.css';
@@ -6,6 +7,7 @@ import TableRow from './TableRow';
 
 const ManageItems = () => {
     const [products, setProducts] = useState([]);
+    const navigate = useNavigate();
     useEffect(() => {
         fetch('http://localhost:5000/products')
             .then(res => res.json())
@@ -34,6 +36,9 @@ const ManageItems = () => {
     return (
         <section className='container'>
             <h1>Manage Inventory Items</h1>
+            <div className='add-item-btn-container'>
+                <button className='btn btn-end' onClick={() => navigate('/add-items')}>Add New Item</button>
+            </div>
             <div className='all-items-container'>
                 <table className='inventory-table'>
                     <thead>

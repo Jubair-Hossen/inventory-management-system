@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './ManageProduct.css'
 
 const ManageProduct = () => {
@@ -8,6 +8,7 @@ const ManageProduct = () => {
     const [product, setProduct] = useState({});
     const [updated, setUpdated] = useState(false);
     const { name, price, url, description, supplier, quantities } = product;
+    const navigate = useNavigate();
     useEffect(() => {
         fetch(path)
             .then(res => res.json())
@@ -59,11 +60,12 @@ const ManageProduct = () => {
                     <p>Quantities: {quantities}</p>
                     <p>Supplier: {supplier}</p>
                     <button onClick={() => handleQuantity(id)}>Delivered</button>
+                    <button className='btn btn-end' onClick={() => navigate('/manage-items')}>Manage Inventories</button>
                 </div>
             </div>
 
             <div className="add-quantity">
-                <h1>Add Some Quantities to This Product</h1>
+                <h1>Restock the items</h1>
                 <form onSubmit={handleAddQuantities}>
                     <input type="number" name="quantity" id="" placeholder='Quantities' required />
                     <input type="submit" value="Add Quantities" />

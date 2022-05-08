@@ -14,6 +14,11 @@
     margin-bottom: 30px;
 }
 
+.btn-end {
+    margin: 25px 0 0 auto;
+    display: block;
+}
+
 @media only screen and (max-width:992px) {
     .products-container {
         grid-template-columns: repeat(2, 1fr);

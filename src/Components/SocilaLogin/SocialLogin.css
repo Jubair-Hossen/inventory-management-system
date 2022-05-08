@@ -14,7 +14,7 @@
     margin: 0 5px 5px;
 }
 
-.social-login .btn {
+.social-login .social-btn {
     font-size: 16px;
     width: 60%;
     margin: 5px auto;
@@ -28,7 +28,7 @@
     box-sizing: border-box;
 }
 
-.social-login .btn img {
+.social-login .social-btn img {
     width: 20px;
 }
 
@@ -37,13 +37,13 @@
 }
 
 @media only screen and (max-width:992px) {
-    .social-login .btn {
+    .social-login .social-btn {
         width: 90%;
     }
 }
 
 @media only screen and (max-width:768px) {
-    .social-login .btn {
+    .social-login .social-btn {
         width: 100%;
     }
 }
