@@ -1,0 +1,14 @@
+.question-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.question-container h2 {
+    margin-bottom: 10px;
+}
+
+.question-container p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 28px;
+}

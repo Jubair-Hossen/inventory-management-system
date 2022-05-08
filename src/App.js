@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer';
 import ProtectedRout from './Components/ProtectedRout/ProtectedRout';
 import MyItems from './Pages/MyItems/MyItems';
 import NotFound from './Pages/NotFound/NotFound';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
 
         <Route path='/manage-items' element={
           <ProtectedRout>

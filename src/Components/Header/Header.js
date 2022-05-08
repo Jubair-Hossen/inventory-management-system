@@ -16,6 +16,7 @@ const Header = () => {
     }
     const handleLogOut = () => {
         signOut(auth);
+        setIsOpen(!isOpen);
     }
     return (
         <header>

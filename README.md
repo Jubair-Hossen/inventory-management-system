@@ -3,7 +3,7 @@
 Live Site Link: [https://inventory-management-sys-a7b08.web.app/](https://inventory-management-sys-a7b08.web.app/).
 
 ## Description
-"Radon Manager" is an invetory management web application. Anyone can use this application for management his/her inventories. It is totally free and easy to use. 
+"Radon Manager" is an invetory management web application. Anyone can use this application for manage his/her inventories. It is totally free and easy to use. 
 
 ### features:
 - Easy to manage inventory.
