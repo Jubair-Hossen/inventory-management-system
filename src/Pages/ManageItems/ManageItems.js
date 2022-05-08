@@ -10,7 +10,7 @@ const ManageItems = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://lit-woodland-54161.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -20,7 +20,7 @@ const ManageItems = () => {
         if (!sure) {
             return
         }
-        const url = `http://localhost:5000/delete/${id}`;
+        const url = `https://lit-woodland-54161.herokuapp.com/delete/${id}`;
         fetch(url, {
             method: "DELETE"
         })

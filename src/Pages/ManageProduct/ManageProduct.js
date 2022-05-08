@@ -4,7 +4,7 @@ import './ManageProduct.css'
 
 const ManageProduct = () => {
     const { id } = useParams();
-    const path = `http://localhost:5000/inventory/${id}`
+    const path = `https://lit-woodland-54161.herokuapp.com/inventory/${id}`
     const [product, setProduct] = useState({});
     const [updated, setUpdated] = useState(false);
     const { name, price, url, description, supplier, quantities } = product;
@@ -28,7 +28,7 @@ const ManageProduct = () => {
             return
         }
 
-        const path = `http://localhost:5000/updatequantity/${id}`
+        const path = `https://lit-woodland-54161.herokuapp.com/updatequantity/${id}`
         fetch(path, {
             method: 'PUT',
             headers: {
