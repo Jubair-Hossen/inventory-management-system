@@ -26,7 +26,6 @@
 
 .login-container .login-from span {
     cursor: pointer;
-    /* font-size: 18px; */
     color: blue;
 }
 
@@ -60,4 +59,10 @@ input:focus {
 
 .login-container .error {
     color: #ba0505;
+}
+
+@media only screen and (max-width:768px) {
+    .login-page {
+        grid-template-columns: 1fr;
+    }
 }

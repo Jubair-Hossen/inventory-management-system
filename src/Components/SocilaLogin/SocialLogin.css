@@ -25,6 +25,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .social-login .btn img {
@@ -33,4 +34,16 @@
 
 .social-login .error {
     color: #ba0505;
+}
+
+@media only screen and (max-width:992px) {
+    .social-login .btn {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .social-login .btn {
+        width: 100%;
+    }
 }
