@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Spinner from '../../Components/Spinner/Spinner';
 import './ManageItems.css';
 import TableRow from './TableRow';
 
@@ -42,7 +43,6 @@ const ManageItems = () => {
             <div className='all-items-container'>
                 <table className='inventory-table'>
                     <thead>
-                        {products ? "" : 'loading...'}
                         <tr>
                             <th>SI.</th>
                             <th>Product</th>
@@ -62,6 +62,7 @@ const ManageItems = () => {
                         }
                     </tbody>
                 </table>
+                {products.length ? "" : <Spinner></Spinner>}
             </div>
         </section>
     );

@@ -1,0 +1,10 @@
+.spinner {
+    max-width: 70px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.spinner img {
+    width: 100%;
+}

@@ -3,6 +3,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import './SocialLogin.css';
 import googleLogo from '../../images/googleogo.png';
+import Spinner from '../Spinner/Spinner';
 // import fblogo from '../../images/facebook.png'
 
 const SocialLogin = () => {

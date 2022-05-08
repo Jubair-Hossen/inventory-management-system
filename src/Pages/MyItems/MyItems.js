@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Spinner from '../../Components/Spinner/Spinner';
 import auth from '../../firebase.init';
 import TableRow from '../ManageItems/TableRow';
 import './MyItems.css';
@@ -61,6 +62,7 @@ const MyItems = () => {
                         }
                     </tbody>
                 </table>
+                {products.length ? '' : <Spinner></Spinner>}
             </div>
         </section>
     );

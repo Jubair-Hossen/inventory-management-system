@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../Components/SocilaLogin/SocialLogin';
+import Spinner from '../../Components/Spinner/Spinner';
 import auth from '../../firebase.init';
 import './Login.css'
 
@@ -36,6 +37,9 @@ const LogIn = () => {
             </div>
             <div className='login-container'>
                 <form className='login-from' onSubmit={handleLogIn}>
+                    {
+                        loading && <Spinner></Spinner>
+                    }
                     <h2>Please Log in</h2>
                     <input type="email" name="email" id="email" placeholder='Email' required />
                     <input type="password" name="pass" id="pass" placeholder='Password' required />

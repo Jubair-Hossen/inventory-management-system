@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useAuthState, useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../../Components/SocilaLogin/SocialLogin';
+import Spinner from '../../Components/Spinner/Spinner';
 import auth from '../../firebase.init';
 import './SignUp.css'
 
@@ -33,6 +34,9 @@ const SignUp = () => {
             </div>
             <div className='signup-container'>
                 <form className='signup-from' onSubmit={handleSignup}>
+                    {
+                        loading && <Spinner></Spinner>
+                    }
                     <h2>Please Sign Up</h2>
                     <input type="text" name="name" id="name" placeholder='Name' required />
                     <input type="email" name="email" id="email" placeholder='Email' required />
